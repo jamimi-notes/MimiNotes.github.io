@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Times New Roman", serif;
   color: black;
-  padding-bottom: 60px;
+  padding-bottom: 60;
   background: url("background.jpg") no-repeat center center fixed;
   background-size: cover; /* full background */
 }
@@ -11,20 +11,20 @@ body {
 .navbar {
   background-color: olive;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 1.5;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5;
 }
 
 .nav-links a {
@@ -40,9 +40,9 @@ body {
 /* Main Grid */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat=(3, 1);
+  gap: 30;
+  max-width: 1200;
   margin: 3 auto;
   padding: 0 20;
 }
@@ -118,6 +118,7 @@ body {
   width: 100;
   bottom: 0;
 }
+
 
 
 
