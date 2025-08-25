@@ -9,7 +9,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: olive;
+  background-color: lightgreen;
   color: white;
   padding: 1 2;
   display: flex;
@@ -110,7 +110,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: olive;
+  background-color: lightgreen;
   color: cornsilk;
   text-align: center;
   padding: 1;
@@ -118,6 +118,7 @@ body {
   width: 100;
   bottom: 0;
 }
+
 
 
 
