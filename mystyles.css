@@ -1,16 +1,15 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: "Times New Roman", serif;
-  background: #f0ffff; /* azure white */
-  color: #333;
-  line-height: 1.5;
-  padding-bottom: 60px; /* prevents content hiding behind fixed footer */
+  background: #ffffff;
+  color: #111; /* hint of black */
+  padding-bottom: 60px; /* space for fixed footer */
 }
 
 /* Navbar */
@@ -20,13 +19,11 @@ body {
   align-items: center;
   background: #808000; /* olive green */
   color: beige;
-  padding: 12px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 15px 20px;
 }
 
 .logo {
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -42,64 +39,60 @@ body {
 .nav-links a {
   text-decoration: none;
   color: beige;
-  font-size: 0.95em;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #90ee90; /* light green */
-}
-
-/* Hero */
-.hero {
-  background: #9caf88; /* sage green */
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2em;
-}
-
-/* Sections */
-.section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 1.8em;
   color: #a0522d; /* sienna brown */
-  margin-bottom: 15px;
 }
 
-/* Cards */
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Main Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  margin-top: 20px;
+  padding: 30px;
 }
 
-.card {
+.grid-item {
   background: beige;
-  color: #333;
-  padding: 20px;
+  border: 2px solid #808000;
   border-radius: 8px;
-  width: 220px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  text-align: center;
+  padding: 40px 10px;
+  transition: background 0.3s, transform 0.2s;
 }
 
-.card:hover {
+.grid-item a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+.grid-item:hover {
+  background: #a0522d; /* sienna brown */
   transform: translateY(-5px);
+}
+
+.grid-item:hover a {
+  color: white;
+}
+
+/* Lower Section */
+.lower-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 30px;
+  background: #f5f5dc; /* beige background */
+}
+
+.lower-box {
+  background: #fff;
+  border: 1px solid #808000;
+  border-radius: 6px;
+  padding: 20px;
 }
 
 /* Footer */
@@ -114,3 +107,4 @@ footer {
   padding: 12px;
   font-size: 0.9em;
 }
+
