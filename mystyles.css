@@ -1,30 +1,31 @@
+/* Global */
 body {
   margin: 0;
   font-family: "Times New Roman", serif;
   color: black;
-  padding-bottom: 60;
+  padding-bottom: 60px;
   background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover; 
+  background-size: cover;
 }
 
-
+/* Navbar */
 .navbar {
-  background-color: lightgreen;
+  background-color: olive;
   color: white;
-  padding: 1 2;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar .logo {
-  font-size: 1.5;
+  font-size: 1.5rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5;
+  gap: 1.5rem;
 }
 
 .nav-links a {
@@ -34,92 +35,92 @@ body {
 }
 
 .nav-links a:hover {
-  color: rosybrown;
+  color: rosybrown; /* ash brown hover */
 }
 
-
+/* Main Grid */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat=(3, 1);
-  gap: 30;
-  max-width: 1200;
-  margin: 3 auto;
-  padding: 0 20;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 20px;
 }
 
 .grid-item {
-  background-color: cornsilk;
-  border: 2 solid rosybrown;
-  border-radius: 12;
-  transition: transform 0.2, background 0.2;
-  height: 240;
+  background-color: cornsilk; /* lighter beige */
+  border: 2px solid rosybrown;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* drop shadow */
+  transition: transform 0.2s, background 0.2s;
+  height: 240px;
 }
 
 .grid-item a {
   display: block;
   text-decoration: none;
   color: black;
-  padding: 1.5;
-  height: 100;
+  padding: 1.5rem;
+  height: 100%;
 }
 
 .grid-item h3 {
   margin-top: 0;
-  margin-bottom: 0.7;
-  font-size: 1.4;
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
 }
 
 .grid-item p {
-  font-size: 1;
-  color: black;
+  font-size: 1rem;
 }
 
 .grid-item:hover {
-  transform: scale=(1.07);
+  transform: scale(1.07);
   background-color: lightgreen;
 }
 
-
+/* Extra Section */
 .extra-section {
   display: flex;
   justify-content: center;
-  gap: 25;
-  margin: 2 auto 4 auto;
-  max-width: 1000;
-  padding: 0 20;
+  gap: 25px;
+  margin: 2rem auto 4rem auto;
+  max-width: 1000px;
+  padding: 0 20px;
 }
 
 .extra-box {
   flex: 1;
   background-color: azure;
-  border: 2 solid light green;
-  border-radius: 10;
-  padding: 1.5;
+  border: 2px solid olive;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* shadow */
 }
 
 .extra-box h4 {
   margin-top: 0;
-  margin-bottom: 0.5;
-  color: rosybrown; 
+  margin-bottom: 0.5rem;
+  color: rosybrown; /* ash brown text */
 }
 
 .extra-box p {
-  font-size: 0.95;
+  font-size: 0.95rem;
   color: black;
 }
 
-
+/* Footer */
 .footer {
-  background-color: lightgreen;
+  background-color: olive;
   color: cornsilk;
   text-align: center;
-  padding: 1;
+  padding: 1rem;
   position: fixed;
-  width: 100;
+  width: 100%;
   bottom: 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 
 
