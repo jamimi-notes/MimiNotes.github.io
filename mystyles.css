@@ -4,10 +4,10 @@ body {
   color: black;
   padding-bottom: 60;
   background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover; /* full background */
+  background-size: cover; 
 }
 
-/* Navbar */
+
 .navbar {
   background-color: lightgreen;
   color: white;
@@ -34,10 +34,10 @@ body {
 }
 
 .nav-links a:hover {
-  color: rosybrown; /* ash-brown effect */
+  color: rosybrown;
 }
 
-/* Main Grid */
+
 .main-grid {
   display: grid;
   grid-template-columns: repeat=(3, 1);
@@ -48,11 +48,11 @@ body {
 }
 
 .grid-item {
-  background-color: cornsilk; /* lighter than beige */
+  background-color: cornsilk;
   border: 2 solid rosybrown;
   border-radius: 12;
   transition: transform 0.2, background 0.2;
-  height: 240; /* slightly bigger */
+  height: 240;
 }
 
 .grid-item a {
@@ -79,7 +79,7 @@ body {
   background-color: lightgreen;
 }
 
-/* Extra Section */
+
 .extra-section {
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@ body {
 .extra-box h4 {
   margin-top: 0;
   margin-bottom: 0.5;
-  color: rosybrown; /* ash brown */
+  color: rosybrown; 
 }
 
 .extra-box p {
@@ -108,7 +108,7 @@ body {
   color: black;
 }
 
-/* Footer */
+
 .footer {
   background-color: lightgreen;
   color: cornsilk;
@@ -118,6 +118,7 @@ body {
   width: 100;
   bottom: 0;
 }
+
 
 
 
