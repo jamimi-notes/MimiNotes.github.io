@@ -1,65 +1,116 @@
-body {
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Times New Roman", serif;
+  background: #f0ffff; /* azure white */
   color: #333;
+  line-height: 1.5;
+  padding-bottom: 60px; /* prevents content hiding behind fixed footer */
 }
 
-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: #CDEAC0; /* Light Green */
-  color: #A0522D; /* Sienna Brown */
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #808000; /* olive green */
+  color: beige;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  background-color: #9CAF88; /* Sage Green */
-}
-
-.grid-box {
-  position: relative;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grid-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(255,255,255,0.85);
-  color: #A0522D;
-  padding: 1rem;
-  text-align: center;
+.logo {
   font-weight: bold;
-  font-size: 1.1rem;
 }
 
-.footer {
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: beige;
+  font-size: 0.95em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #90ee90; /* light green */
+}
+
+/* Hero */
+.hero {
+  background: #9caf88; /* sage green */
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  color: #a0522d; /* sienna brown */
+  margin-bottom: 15px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: beige;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: olive;
+  background: #808000; /* olive green */
   color: beige;
   text-align: center;
-  padding: 15px;
+  padding: 12px;
   font-size: 0.9em;
-}
-
-
 }
