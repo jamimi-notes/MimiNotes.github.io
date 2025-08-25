@@ -1,9 +1,9 @@
 /* Global */
 body {
   margin: 0;
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman", sans serif;
   color: black;
-  padding-bottom: 60px;
+  padding-bottom: 60;
   background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
@@ -12,20 +12,20 @@ body {
 .navbar {
   background-color: olive;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 1.5;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5;
 }
 
 .nav-links a {
@@ -41,42 +41,42 @@ body {
 /* Main Grid */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 20px;
+  grid-template-columns: repeat=(3, 1);
+  gap: 30;
+  max-width: 1200;
+  margin: 3 auto;
+  padding: 0 20;
 }
 
 .grid-item {
   background-color: cornsilk; /* lighter beige */
-  border: 2px solid rosybrown;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* drop shadow */
-  transition: transform 0.2s, background 0.2s;
-  height: 240px;
+  border: 2 solid rosybrown;
+  border-radius: 12;
+  box-shadow: 0 4 12 (0, 0, 0, 0.2); /* drop shadow */
+  transition: transform 0.2, background 0.2;
+  height: 240;
 }
 
 .grid-item a {
   display: block;
   text-decoration: none;
   color: black;
-  padding: 1.5rem;
-  height: 100%;
+  padding: 1.5;
+  height: 100;
 }
 
 .grid-item h3 {
   margin-top: 0;
-  margin-bottom: 0.7rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.7;
+  font-size: 1.4;
 }
 
 .grid-item p {
-  font-size: 1rem;
+  font-size: 1;
 }
 
 .grid-item:hover {
-  transform: scale(1.07);
+  transform: scale=(1.07);
   background-color: lightgreen;
 }
 
@@ -84,29 +84,29 @@ body {
 .extra-section {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin: 2rem auto 4rem auto;
-  max-width: 1000px;
-  padding: 0 20px;
+  gap: 25;
+  margin: 2 auto 4 auto;
+  max-width: 1000;
+  padding: 0 20;
 }
 
 .extra-box {
   flex: 1;
   background-color: azure;
-  border: 2px solid olive;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* shadow */
+  border: 2 solid olive;
+  border-radius: 10;
+  padding: 1.5;
+  box-shadow: 0 4 10(0, 0, 0, 0.15); /* shadow */
 }
 
 .extra-box h4 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5;
   color: rosybrown; /* ash brown text */
 }
 
 .extra-box p {
-  font-size: 0.95rem;
+  font-size: 0.95;
   color: black;
 }
 
@@ -115,12 +115,13 @@ body {
   background-color: olive;
   color: cornsilk;
   text-align: center;
-  padding: 1rem;
+  padding: 1;
   position: fixed;
-  width: 100%;
+  width: 100;
   bottom: 0;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -2 8(0, 0, 0, 0.2);
 }
+
 
 
 
