@@ -48,3 +48,18 @@ header {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: olive;
+  color: beige;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+
+}
