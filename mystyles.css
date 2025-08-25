@@ -1,14 +1,14 @@
-/* Global */
+
 body {
   margin: 0;
   font-family: "Times New Roman", serif;
   color: #222;
   padding-bottom: 60px;
   background: url("pic.jpg") no-repeat center center fixed;
-  background-size: cover; /* make sure image covers screen */
+  background-size: cover; 
 }
 
-/* Navbar */
+
 .navbar {
   background-color: rgb(133, 133, 95);
   color: white;
@@ -38,7 +38,7 @@ body {
   color: rgb(134, 117, 108);
 }
 
-/* Main Grid */
+
 .main-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -49,12 +49,12 @@ body {
 }
 
 .grid-item {
-  background-color: rgba(223, 230, 197, 0.9); /* greenish beige, slightly transparent */
+  background-color: rgba(223, 230, 197, 0.9); 
   border: 2px solid rgb(88, 74, 67);
   border-radius: 12px;
   transition: transform 0.2s;
   background: 0.2s;
-  height: 220px; /* bigger box */
+  height: 220px; 
 }
 
 .grid-item a {
@@ -81,7 +81,6 @@ body {
   background-color: rgba(203, 215, 170, 0.95);
 }
 
-/* Extra Section */
 .extra-section {
   display: flex;
   justify-content: center;
@@ -110,7 +109,7 @@ body {
   color: #333;
 }
 
-/* Footer */
+
 .footer {
   background-color: rgb(209, 209, 164);
   color: beige;
@@ -120,3 +119,4 @@ body {
   width: 100%;
   bottom: 0;
 }
+
