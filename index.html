@@ -3,134 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MimiNotes</title>
-  <link rel="stylesheet" href="mystyles.css">
+  <title>MimiNotes Demo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Sidebar toggle -->
-  <input type="checkbox" id="sidebar-toggle" hidden>
+  <!-- Sidebar Toggle -->
+  <input type="checkbox" id="sidebar-toggle">
+  <label for="sidebar-toggle" class="open-btn">&#9776; Menu</label>
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <label for="sidebar-toggle" class="close-btn">×</label>
-    <a href="index.html">Home</a>
-    <a href="developer.html">Developer</a>
-    <a href="reviewers.html">Reviewers</a>
-    <a href="contact.html">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Notes</a>
+    <a href="#">Contact</a>
   </div>
-
-  <!-- Open Button -->
-  <label for="sidebar-toggle" class="open-btn">☰ Menu</label>
 
   <!-- Page Wrapper -->
   <div class="page-wrapper">
 
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- Header -->
+    <div class="header-container">
+      <h1>MimiNotes</h1>
+    </div>
 
-      <!-- Header -->
-      <header class="header-container">
-        <h1>❀⋆.ೃ࿔*:･MimiNotes❀⋆.ೃ࿔*:･</h1>
-      </header>
+    <!-- Description -->
+    <div class="description-container">
+      <p>Welcome to your personal study hub!</p>
+    </div>
 
-      <!-- Description -->
-      <div class="description-container">
-        <p>❀⋆.ೃ࿔*:･ Your very own personal notes, made just for you. Keep track of your studies easily! ❀⋆.ೃ࿔*:･</p>
+    <!-- Boxes Grid -->
+    <div class="boxes-container">
+      <a class="box" href="#">
+        <div class="box-text">Box 1</div>
+        <div class="box-desc">Description</div>
+      </a>
+      <a class="box" href="#">
+        <div class="box-text">Box 2</div>
+        <div class="box-desc">Description</div>
+      </a>
+      <a class="box" href="#">
+        <div class="box-text">Box 3</div>
+        <div class="box-desc">Description</div>
+      </a>
+      <a class="box" href="#">
+        <div class="box-text">Box 4</div>
+        <div class="box-desc">Description</div>
+      </a>
+      <a class="box" href="#">
+        <div class="box-text">Box 5</div>
+        <div class="box-desc">Description</div>
+      </a>
+      <a class="box" href="#">
+        <div class="box-text">Box 6</div>
+        <div class="box-desc">Description</div>
+      </a>
+    </div>
+
+    <!-- Bottom Gallery -->
+    <div class="gallery-wrapper">
+      <div class="arrow prev">&#10094;</div>
+      <div class="image-gallery">
+        <img src="images/image1.jpg" alt="Image 1">
+        <img src="images/image2.jpg" alt="Image 2">
+        <img src="images/image3.jpg" alt="Image 3">
+        <img src="images/image4.jpg" alt="Image 4">
+        <img src="images/image5.jpg" alt="Image 5">
       </div>
-
-      <!-- Boxes Grid -->
-      <div class="boxes-container">
-        <a href="https://docs.google.com/document/d/1OJMPbFZ5JGqXL7s0-SqnP2fdzy0y0k6iW-eMWp6Ov1s/edit?usp=sharing" class="box">
-          <div class="box-text">Ekonomiks</div>
-          <div class="box-desc">Study of economy and society.</div>
-        </a>
-        <a href="https://docs.google.com/document/d/1tGXbNJfxB3hWHJ-3ko40nTDdC7yNlNL_f0Ee0jXIaYo/edit?usp=sharing" class="box">
-          <div class="box-text">Filipino</div>
-          <div class="box-desc">Language and literature of the Philippines.</div>
-        </a>
-        <a href="#" class="box">
-          <div class="box-text">English</div>
-          <div class="box-desc">Grammar, literature, and writing skills.</div>
-        </a>
-        <a href="https://docs.google.com/document/d/15Y1n1OlSDSvTt91opHy2sXrzEFd1W8DQRZCfLztkwzw/edit?usp=sharing" class="box">
-          <div class="box-text">Mathematics</div>
-          <div class="box-desc">Numbers, calculations, and problem solving.</div>
-        </a>
-        <a href="#" class="box">
-          <div class="box-text">Science</div>
-          <div class="box-desc">Nature and scientific principles.</div>
-        </a>
-        <a href="#" class="box">
-          <div class="box-text">Christian Living</div>
-          <div class="box-desc">Values, morals, and teachings of Christianity.</div>
-        </a>
-      </div>
-
-      <!-- Bottom Containers -->
-      <div class="bottom-container light-green">
-        <p>Study well! Review well! Answer well! - Jamimi</p>
-      </div>
-      <div class="bottom-container sage-green">
-        <p>˖❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･ৎ˚₊❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･❀⋆.ೃ࿔*:･!</p>
-      </div>
-
-      <!-- Image Gallery -->
-      <div class="gallery-container">
-        <div class="gallery-wrapper">
-          <!-- Radio buttons for CSS control -->
-          <input type="radio" name="gallery" id="img1" checked hidden>
-          <input type="radio" name="gallery" id="img2" hidden>
-          <input type="radio" name="gallery" id="img3" hidden>
-
-   <div class="gallery-container">
-  <button class="arrow left">&#8592;</button> <!-- Left arrow -->
-  
-  <div class="image-gallery">
-    <img src="images/"C:\Users\admin\OneDrive\Desktop\miminotes\images\img.jpg"" alt="Image 1">
-    <img src="images/"C:\Users\admin\OneDrive\Desktop\miminotes\images\img.jpg"" alt="Image 2">
-    <img src="images/"C:\Users\admin\OneDrive\Desktop\miminotes\images\img.jpg"" alt="Image 3">
-    <img src="images/"C:\Users\admin\OneDrive\Desktop\miminotes\images\img.jpg"" alt="Image 4">
-    <img src="images/"C:\Users\admin\OneDrive\Desktop\miminotes\images\img.jpg"" alt="Image 5">
-  </div>
-  
-  <button class="arrow right">&#8594;</button> <!-- Right arrow -->
-</div>
-            <label for="img2" class="next">&#10095;</label>
-          </div>
-
-          <!-- Dots navigation -->
-          <div class="gallery-dots">
-            <label for="img1" class="dot"></label>
-            <label for="img2" class="dot"></label>
-            <label for="img3" class="dot"></label>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- end main-content -->
+      <div class="arrow next">&#10095;</div>
+    </div>
 
     <!-- Footer -->
     <footer>
-      &copy; 2025 Jamilla Raine L. Batoon. All Rights Reserved.
+      &copy; 2025 MimiNotes. All rights reserved.
     </footer>
 
-  </div> <!-- end page-wrapper -->
+  </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
