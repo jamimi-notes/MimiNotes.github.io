@@ -158,64 +158,6 @@ body::before {
   font-size: 1rem;
 }
 
-/* ================== Bottom Gallery ================== */
-.gallery-wrapper {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f4f4;
-  padding: 10px 50px; /* space for arrows */
-  gap: 10px;
-  overflow: hidden;
-  z-index: 1000;
-}
-
-.image-gallery {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 10px;
-  scroll-behavior: smooth;
-}
-
-.image-gallery img {
-  flex: 0 0 auto;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  scroll-snap-align: start;
-  transition: transform 0.3s;
-}
-
-.image-gallery img:hover {
-  transform: scale(1.1);
-}
-
-/* ================== Arrows ================== */
-.arrow {
-  font-size: 2rem;
-  cursor: pointer;
-  user-select: none;
-  color: black;               /* arrows black */
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 50%;
-  padding: 10px;
-  position: fixed;            /* fixed at bottom */
-  bottom: 20px;
-  z-index: 1001;
-}
-
-.prev { left: 20px; }
-.next { right: 20px; }
-
-.arrow:hover {
-  background-color: rgba(200,200,200,0.9);
-}
-
 /* ================== Footer ================== */
 footer {
   width: 100%;
@@ -225,3 +167,4 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
