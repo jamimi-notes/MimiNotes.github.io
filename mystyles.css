@@ -151,49 +151,51 @@ header {
 
 h1 {
   font-size: 2.5em;
+}
 .subjects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
-  gap: 20px;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  max-width: 1000px !important;
+  margin: 40px auto !important;
+  padding: 0 20px !important;
 }
 
 .subject-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #90EE90; /* same light green you used */
-  color: black;              /* same text color */
-  font-family: Arial, sans-serif; /* same font */
-  font-size: 1.3em;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 12px;
-  padding: 30px;
-  transition: transform 0.2s, background 0.3s;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #90EE90 !important; /* same green */
+  color: black !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 1.3em !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  border-radius: 12px !important;
+  padding: 30px !important;
+  transition: transform 0.2s, background 0.3s !important;
 }
 
 .subject-box:hover {
-  background-color: #77dd77; /* slightly darker green on hover */
-  transform: translateY(-3px);
+  background-color: #77dd77 !important;
+  transform: translateY(-3px) !important;
 }
 
-
-/* 📱 Tablets (<= 900px wide): 2 boxes per row */
+/* 📱 Tablet screens (<= 900px): 2 columns */
 @media (max-width: 900px) {
   .subjects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
-/* 📱 Phones (<= 600px wide): 1 box per row */
+/* 📱 Phone screens (<= 600px): 1 column */
 @media (max-width: 600px) {
   .subjects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
+
+
 
 
 
