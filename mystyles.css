@@ -114,6 +114,114 @@ body {
   position: relative;
 }
 
+.grid-item a {
+  display: block;
+  background-color: #228B22; /* your green base */
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add background image per subject */
+.grid-item.english a {
+  background: url('images/english.jpg') center/cover no-repeat;
+}
+
+.grid-item.math a {
+  background: url('images/math.jpg') center/cover no-repeat;
+}
+
+.grid-item.science a {
+  background: url('images/science.jpg') center/cover no-repeat;
+}
+
+.grid-item.filipino a {
+  background: url('images/filipino.jpg') center/cover no-repeat;
+}
+
+.grid-item.ekonomiks a {
+  background: url('images/ekonomiks.jpg') center/cover no-repeat;
+}
+
+.grid-item.cl a {
+  background: url('images/christian.jpg') center/cover no-repeat;
+}
+
+/* Dark overlay for readability */
+.grid-item a::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(34,139,34,0.7); /* green overlay */
+  z-index: 0;
+}
+
+.grid-item a {
+  display: block;
+  background-color: #228B22; /* your green base */
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add background image per subject */
+.grid-item.english a {
+  background: url('images/pic2.jpg') center/cover no-repeat;
+}
+
+.grid-item.math a {
+  background: url('images/math.jpg') center/cover no-repeat;
+}
+
+.grid-item.science a {
+  background: url('images/science.jpg') center/cover no-repeat;
+}
+
+.grid-item.filipino a {
+  background: url('images/filipino.jpg') center/cover no-repeat;
+}
+
+.grid-item.ekonomiks a {
+  background: url('images/ekonomiks.jpg') center/cover no-repeat;
+}
+
+.grid-item.cl a {
+  background: url('images/christian.jpg') center/cover no-repeat;
+}
+
+/* Dark overlay for readability */
+.grid-item a::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(34,139,34,0.7); /* green overlay */
+  z-index: 0;
+}
+
+.grid-item h3,
+.grid-item p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover effect */
+.grid-item a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
 
 
 
