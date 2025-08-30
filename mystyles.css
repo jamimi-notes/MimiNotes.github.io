@@ -34,7 +34,7 @@ body::before {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #AFE1AF;
+  background-color: 	#40826D;
   padding-top: 60px;
   transition: left 0.3s;
   z-index: 2;
@@ -180,6 +180,7 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
 
