@@ -29,7 +29,7 @@ body::before {
 
 /* Sidebar Background */
 .sidebar {
-  background-color: #40826D; /* changed from #AFE1AF */
+  background-color: 	#9FE2BF; /* changed from #AFE1AF */
   display: flex;
   flex-direction: column;
   padding-top: 60px;
@@ -44,7 +44,7 @@ body::before {
 
 /* Sidebar Background */
 .sidebar {
-  background-color: #40826D; /* Updated to your preferred color */
+  background-color: 	#9FE2BF; /* Updated to your preferred color */
   display: flex;
   flex-direction: column;
   padding-top: 60px;
@@ -267,6 +267,7 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
 
