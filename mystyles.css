@@ -42,18 +42,33 @@ body::before {
   z-index: 2;
 }
 
+/* Sidebar Background */
+.sidebar {
+  background-color: #40826D; /* Updated to your preferred color */
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Adjusted for better visibility */
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s;
+  z-index: 2;
+}
+
 /* Sidebar Links as Rows with Separator Lines */
 .sidebar a {
   text-decoration: none;
-  color: #fff; /* white text to contrast */
+  color: #fff; /* White text for contrast */
   font-weight: 600;
   padding: 15px 20px;
   transition: background 0.3s, transform 0.3s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* row separator line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Row separator line */
 }
 
 .sidebar a:last-child {
-  border-bottom: none; /* no line after the last item */
+  border-bottom: none; /* No line after the last item */
 }
 
 .sidebar a:hover {
@@ -61,6 +76,7 @@ body::before {
   color: white;
   transform: scale(1.05);
 }
+
 
 /* Sidebar Toggle */
 #sidebar-toggle:checked ~ .sidebar {
@@ -251,6 +267,7 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
 
