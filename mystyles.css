@@ -157,7 +157,42 @@ body::before {
 .box-desc {
   font-size: 1rem;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Width Box Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
 
+    .full-width-box {
+      width: 100%;
+      background-color: #a2d5c6; /* light greenish */
+      padding: 50px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .full-width-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .full-width-box p {
+      max-width: 800px;
+      font-size: 18px;
+      color: #333;
+    }
 /* ================== Footer ================== */
 footer {
   width: 100%;
@@ -167,4 +202,5 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
