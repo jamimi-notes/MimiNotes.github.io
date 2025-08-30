@@ -129,10 +129,82 @@ body {
 }
 
 /* Make main content expand to push footer down */
+/* Main content */
 .main-content {
-  flex: 1;
+  margin-left: 20px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #AFE1AF;
+  padding-top: 60px;
+  transition: left 0.3s;
+  z-index: 2;
   display: flex;
   flex-direction: column;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #5F8575;
+  color: white;
+}
+
+/* Open button */
+.open-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Close button inside sidebar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Toggle sidebar using checkbox */
+#sidebar-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+#sidebar-toggle:checked ~ .open-btn {
+  display: none;
+}
+
+
+#sidebar-toggle:checked ~ .main-content {
+  margin-left: 270px; /* width + some space */
 }
 
 /* Footer styling */
@@ -143,6 +215,7 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
 
 
 
