@@ -185,7 +185,6 @@ body::before {
 
 .bottom-container.light-green { background-color: #D4F1D4; }
 .bottom-container.sage-green { background-color: #AFE1AF; }
-
 /* Gallery Container */
 .gallery-container {
   width: 100%;
@@ -204,7 +203,7 @@ body::before {
 /* Images */
 .gallery-images {
   display: flex;
-  width: 300%; /* 3 images */
+  width: 300%; /* 3 images side by side */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -214,12 +213,12 @@ body::before {
   border-radius: 15px;
 }
 
-/* Radio Button Controls */
+/* CSS Radio Button Control */
 #img1:checked ~ .gallery-images { transform: translateX(0); }
 #img2:checked ~ .gallery-images { transform: translateX(-33.3333%); }
 #img3:checked ~ .gallery-images { transform: translateX(-66.6666%); }
 
-/* Prev / Next Arrows */
+/* Arrows */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -227,7 +226,6 @@ body::before {
   font-size: 2rem;
   color: #5F8575;
   cursor: pointer;
-  user-select: none;
   padding: 10px;
   background-color: rgba(255,255,255,0.7);
   border-radius: 50%;
@@ -267,6 +265,7 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
 
