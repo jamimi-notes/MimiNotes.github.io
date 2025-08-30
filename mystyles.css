@@ -31,10 +31,10 @@ html, body {
 /* Boxes grid full width */
 .boxes-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px;
   width: 100%;
-  padding: 0; /* remove side padding */
+  padding: 0; /* no side padding */
   margin: 0;
 }
 
@@ -74,6 +74,7 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
 
 
 
