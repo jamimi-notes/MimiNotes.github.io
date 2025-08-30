@@ -6,6 +6,8 @@ body {
   font-family: 'Times new roman', sans-serif;
 }
 
+}
+
 * {
   margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
   
@@ -114,11 +116,6 @@ body {
 
 .bottom-container.light-green { background-color:#D4F1D4; }
 .bottom-container.sage-green { background-color:#AFE1AF; }
-body {
-  display: flex;
-  min-height: 100vh;
-}
-
 
 
 /* Page wrapper: vertical flex for main + footer */
@@ -202,10 +199,17 @@ body {
   display: none;
 }
 
+/* Main content */
+.main-content {
+  margin-left: 20px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
 
 #sidebar-toggle:checked ~ .main-content {
   margin-left: 270px; /* width + some space */
 }
+
 
 /* Footer styling */
 footer {
@@ -215,6 +219,7 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
 
 
 
