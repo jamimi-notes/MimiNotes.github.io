@@ -113,12 +113,12 @@ body {
 }
 
 /* Background images for each subject */
-.grid-item:nth-child(1)::before { background-image: url("images/english.jpg"); }
-.grid-item:nth-child(2)::before { background-image: url("images/math.jpg"); }
-.grid-item:nth-child(3)::before { background-image: url("images/filipino.jpg"); }
-.grid-item:nth-child(4)::before { background-image: url("images/science.jpg"); }
-.grid-item:nth-child(5)::before { background-image: url("images/economics.jpg"); }
-.grid-item:nth-child(6)::before { background-image: url("images/christian.jpg"); }
+.grid-item:nth-child(1)::before { background-image: url("images/pic.jpg"); }
+.grid-item:nth-child(2)::before { background-image: url("images/pic.jpg"); }
+.grid-item:nth-child(3)::before { background-image: url("images/pic.jpg"); }
+.grid-item:nth-child(4)::before { background-image: url("images/pic.jpg"); }
+.grid-item:nth-child(5)::before { background-image: url("images/pic.jpg"); }
+.grid-item:nth-child(6)::before { background-image: url("images/pic.jpg"); }
 
 /* Responsive layout for small screens */
 @media (max-width: 768px) {
@@ -141,4 +141,5 @@ body {
   border-top: 2px solid #ccc;
   margin-top: 30px;
 }
+
 
