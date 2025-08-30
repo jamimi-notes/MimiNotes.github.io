@@ -48,30 +48,75 @@ body {
   padding: 0 20px;
 }
 
-.subject-box {
-  background-color: #90EE90; /* light green */
-  border: 2px solid #008000; /* dark green border */
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
+.grid-item a {
+  display: block;
+  color: white;
   text-decoration: none;
-  color: black;
-  transition: transform 0.2s, background-color 0.3s;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 220px; /* keeps box heights consistent */
 }
 
-.subject-box:hover {
-  transform: scale(1.05);
-  background-color: #77dd77; /* darker green on hover */
+/* Background images per subject */
+.grid-item.english a {
+  background: url('images/english.jpg') center/cover no-repeat;
 }
 
-.subject-box h3 {
+.grid-item.math a {
+  background: url('images/math.jpg') center/cover no-repeat;
+}
+
+.grid-item.science a {
+  background: url('images/science.jpg') center/cover no-repeat;
+}
+
+.grid-item.filipino a {
+  background: url('images/filipino.jpg') center/cover no-repeat;
+}
+
+.grid-item.ekonomiks a {
+  background: url('images/ekonomiks.jpg') center/cover no-repeat;
+}
+
+.grid-item.cl a {
+  background: url('images/christian.jpg') center/cover no-repeat;
+}
+
+/* Overlay for readability */
+.grid-item a::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(34,139,34,0.7); /* semi-transparent green */
+  z-index: 0;
+}
+
+/* Text inside boxes */
+.grid-item h3,
+.grid-item p {
+  position: relative;
+  z-index: 1;
   margin: 10px 0;
+  text-align: center;
+}
+
+.grid-item h3 {
   font-size: 22px;
 }
 
-.subject-box p {
+.grid-item p {
   font-size: 14px;
-  color: #333;
+}
+
+/* Hover effect */
+.grid-item a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 /* RESPONSIVE GRID */
@@ -113,118 +158,6 @@ body {
   padding: 20px;
   position: relative;
 }
-
-.grid-item a {
-  display: block;
-  background-color: #228B22; /* your green base */
-  color: white;
-  text-decoration: none;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Add background image per subject */
-.grid-item.english a {
-  background: url('images/english.jpg') center/cover no-repeat;
-}
-
-.grid-item.math a {
-  background: url('images/math.jpg') center/cover no-repeat;
-}
-
-.grid-item.science a {
-  background: url('images/science.jpg') center/cover no-repeat;
-}
-
-.grid-item.filipino a {
-  background: url('images/filipino.jpg') center/cover no-repeat;
-}
-
-.grid-item.ekonomiks a {
-  background: url('images/ekonomiks.jpg') center/cover no-repeat;
-}
-
-.grid-item.cl a {
-  background: url('images/christian.jpg') center/cover no-repeat;
-}
-
-/* Dark overlay for readability */
-.grid-item a::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(34,139,34,0.7); /* green overlay */
-  z-index: 0;
-}
-
-.grid-item a {
-  display: block;
-  background-color: #228B22; /* your green base */
-  color: white;
-  text-decoration: none;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Add background image per subject */
-.grid-item.english a {
-  background: url('images/pic2.jpg') center/cover no-repeat;
-}
-
-.grid-item.math a {
-  background: url('images/math.jpg') center/cover no-repeat;
-}
-
-.grid-item.science a {
-  background: url('images/science.jpg') center/cover no-repeat;
-}
-
-.grid-item.filipino a {
-  background: url('images/filipino.jpg') center/cover no-repeat;
-}
-
-.grid-item.ekonomiks a {
-  background: url('images/ekonomiks.jpg') center/cover no-repeat;
-}
-
-.grid-item.cl a {
-  background: url('images/christian.jpg') center/cover no-repeat;
-}
-
-/* Dark overlay for readability */
-.grid-item a::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(34,139,34,0.7); /* green overlay */
-  z-index: 0;
-}
-
-.grid-item h3,
-.grid-item p {
-  position: relative;
-  z-index: 1;
-}
-
-/* Hover effect */
-.grid-item a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
-
-
-
-
 
 
 
