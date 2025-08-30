@@ -152,33 +152,38 @@ header {
 h1 {
   font-size: 2.5em;
 }
+.subjects-grid{
+    display:grid !important;
+    grid-template-columns: repeat(3, minmax(180px, 1fr)) !important; /* 3 columns */
+    gap:20px !important;
+    max-width:1000px !important;  /* keeps the grid from stretching too wide */
+    margin:40px auto !important;  /* centers the grid horizontally */
+    padding:0 16px;
+  }
 
-.subjects {
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* space between boxes */
-  max-width: 800px; /* keeps grid centered */
-}
+  /* each box */
+  .subject-card{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    height:140px;
+    background:#fff;
+    border:2px solid #0073e6;
+    border-radius:14px;
+    font:600 1.1rem/1.2 system-ui, Arial, sans-serif;
+    color:#0073e6;
+    text-decoration:none !important;
+    transition:background .25s, color .25s, transform .1s;
+  }
+  .subject-card:hover{ background:#0073e6; color:#fff; transform:translateY(-2px); }
 
-.subjects a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background: white;
-  border: 2px solid #0073e6;
-  border-radius: 12px;
-  font-size: 1.3em;
-  color: #0073e6;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.subjects a:hover {
-  background: #0073e6;
-  color: white;
-}
+  /* make it nice on small screens */
+  @media (max-width:900px){
+    .subjects-grid{ grid-template-columns: repeat(2, minmax(160px, 1fr)) !important; }
+  }
+  @media (max-width:560px){
+    .subjects-grid{ grid-template-columns: 1fr !important; }
+  }
 
 
 
