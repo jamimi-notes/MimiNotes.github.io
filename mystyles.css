@@ -103,30 +103,32 @@ header .header-container h1 {
   color: white;
 }
 
-/* Boxes */
+/* Boxes Container */
 .boxes-container {
-  margin: 20px;
-  padding: 30px;
-  background-color: rgba(175,225,175,0.3);
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #F0F8FF; /* Azure beige-ish */
   border-radius: 15px;
+  max-width: 1200px;
 }
 
 .top-container {
   display: flex;
-  justify-content: center;
-  gap: 40px;
   flex-wrap: wrap;
+  justify-content: center; /* centers all boxes */
+  gap: 40px;
 }
 
+/* Box Styles */
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  background-color: #5F8575;
-  color: white;
-  font-size: 1.5rem;
+  width: 320px; /* bigger boxes */
+  height: 360px; /* bigger */
+  background-color: #F0F8FF; /* azure beige background */
+  color: #000; /* black text */
+  font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 15px;
@@ -136,7 +138,7 @@ header .header-container h1 {
 
 .box:hover {
   transform: scale(1.05);
-  background-color: #76a089;
+  background-color: #E0EEE8; /* slightly darker on hover */
 }
 
 .box-img {
@@ -147,6 +149,16 @@ header .header-container h1 {
 
 .box-subtext {
   margin-top: 10px;
+  color: #000; /* black subtext */
+}
+
+/* Carousel Updates */
+.slides {
+  display: flex;
+  width: 300%;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out; /* smooth slide */
+  animation: none; /* remove infinite loop */
 }
 
 /* Carousel */
@@ -178,5 +190,6 @@ header .header-container h1 {
   33% { transform: translateX(-100%); }
   66% { transform: translateX(-200%); }
   100
+
 
 
