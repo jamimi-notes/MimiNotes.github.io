@@ -11,7 +11,42 @@ html, body {
   height: 100%;
   overflow-x: hidden;
 }
+ margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      padding: 50px 20px;
+    }
 
+    .container-box {
+      background-color: #ffffff; /* white box */
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .container-box h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #2c7a7b; /* teal-ish */
+    }
+
+    .container-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .container-box p {
+      font-size: 18px;
+      color: #333;
+      text-align: justify; /* aligns text on both sides */
+    }
 /* ================== Background Image ================== */
 body::before {
   content: "";
@@ -157,42 +192,7 @@ body::before {
 .box-desc {
   font-size: 1rem;
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Width Box Example</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
 
-    .full-width-box {
-      width: 100%;
-      background-color: #a2d5c6; /* light greenish */
-      padding: 50px 20px;
-      box-sizing: border-box;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .full-width-box img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .full-width-box p {
-      max-width: 800px;
-      font-size: 18px;
-      color: #333;
-    }
 /* ================== Footer ================== */
 footer {
   width: 100%;
@@ -202,5 +202,6 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
