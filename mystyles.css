@@ -1,146 +1,73 @@
-/* Background */
+/* General */
 body {
-  background-image: url("images/bg.jpg"); 
+  background-image: url("images/bg.jpg"); /* make sure bg.jpg exists in /images */
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  color: black;   /* <-- all texts are black now */
+  font-family: Arial, sans-serif;
+  color: black;
   text-align: center;
 }
 
 /* Navbar */
 .navbar {
-  background: rgba(255, 255, 255, 0.7);  /* light background for navbar */
+  background: rgba(255, 255, 255, 0.8);
   padding: 15px;
-  text-align: center;
 }
 .navbar a {
-  color: black;  /* <-- black text links */
+  color: black;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 .navbar a:hover {
-  color: darkgreen; /* hover effect */
+  color: darkgreen;
 }
 
-/* Title (big header) */
+/* Title */
 .title {
-  margin-top: 40px;
+  margin: 40px 0;
   font-size: 2.5rem;
-  color: darkolivegreen;  /* <-- forest green / olive tone */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  color: darkolivegreen; /* forest green tone */
 }
 
-/* Sections */
-.section {
-  margin: 50px auto;
-  padding: 20px;
-  max-width: 1000px;
-  background: rgba(255,255,255,0.8); /* light background box */
-  border-radius: 12px;
-}
-.section h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: black;  /* section headers black */
-}
-
-/* BOXES (Docs links) */
+/* Boxes */
 .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-  justify-items: center;
+  max-width: 1000px;
+  margin: auto;
 }
 .box {
-  background-color: lightgreen; /* your old color */
-  color: black;   /* <-- text inside boxes is black */
-  width: 200px;
-  height: 150px;
+  background-color: lightgreen;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   font-weight: bold;
   border-radius: 12px;
+  height: 150px;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: transform 0.2s, background 0.3s;
 }
 .box:hover {
   transform: scale(1.05);
-  background-color: mediumseagreen;
-  color: white; /* optional: makes hover text white for contrast */
-}
-
-/* Developer Photo */
-.dev-photo {
-  width: 200px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  margin-bottom: 15px;
-}
-
-/* Gallery */
-.gallery {
-  width: 100%;
-  margin-top: 20px;
-}
-.gallery img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
-/* Contact */
-.contact-box {
-  background: rgba(255,255,255,0.9); /* white background with transparency */
-  padding: 20px;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: black;
-}
-
-/* Reviewers */
-.reviewer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.reviewer-box {
-  background: beige;  /* softer reviewer box color */
-  color: black;
-  padding: 15px 25px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s, background 0.3s;
-}
-.reviewer-box:hover {
-  transform: scale(1.05);
-  background: tan; /* darker beige on hover */
+  background: mediumseagreen;
+  color: white;
 }
 
 /* Footer */
 .footer {
-  background: rgba(255, 255, 255, 0.8);
-  color: black;
-  text-align: center;
+  background: rgba(255,255,255,0.8);
   padding: 15px;
-  font-size: 0.9rem;
   margin-top: 40px;
   border-top: 2px solid darkolivegreen;
+  font-size: 0.9rem;
 }
 
 
