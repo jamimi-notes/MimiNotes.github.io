@@ -8,6 +8,16 @@
 </head>
 <body>
 
+<!-- Side Menu -->
+<div class="side-menu">
+  <ul>
+    <li><span></span><a href="index.html">Home</a></li>
+    <li><span></span><a href="developer.html">Developer</a></li>
+    <li><span></span><a href="reviewers.html">Reviewers</a></li>
+    <li><span></span><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
 <header>
   <div class="header-container">
     <h1>MimiNotes</h1>
@@ -23,35 +33,50 @@
 </header>
 
 <main>
+  <!-- Boxes Section -->
   <div class="boxes-container">
     <div class="top-container">
       <a href="https://docs.google.com/document/d/1OJMPbFZ5JGqXL7s0-SqnP2fdzy0y0k6iW-eMWp6Ov1s/edit?usp=sharing" target="_blank" class="box">
-        <div class="box-text">Eko</div>
+        <div class="box-text">Ekonomiks</div>
         <img src="images/pic.jpg" alt="Ekonomiks" class="box-img">
+        <div class="box-subtext">Subject Info</div>
       </a>
       <a href="https://docs.google.com/document/d/15Y1n1OlSDSvTt91opHy2sXrzEFd1W8DQRZCfLztkwzw/edit?usp=sharing" target="_blank" class="box">
         <div class="box-text">Mathematics</div>
         <img src="images/pic.jpg" alt="Mathematics" class="box-img">
+        <div class="box-subtext">Subject Info</div>
       </a>
       <a href="https://docs.google.com/document/d/1tGXbNJfxB3hWHJ-3ko40nTDdC7yNlNL_f0Ee0jXIaYo/edit?usp=sharing" target="_blank" class="box">
         <div class="box-text">Filipino</div>
         <img src="images/pic.jpg" alt="Filipino" class="box-img">
+        <div class="box-subtext">Subject Info</div>
       </a>
     </div>
+  </div>
 
-    <div class="bottom-container">
-      <a href="#" class="box">
-        <div class="box-text">Placeholder 1</div>
-        <img src="images/pic.jpg" alt="Placeholder 1" class="box-img">
-      </a>
-      <a href="#" class="box">
-        <div class="box-text">Placeholder 2</div>
-        <img src="images/pic.jpg" alt="Placeholder 2" class="box-img">
-      </a>
-      <a href="#" class="box">
-        <div class="box-text">Placeholder 3</div>
-        <img src="images/pic.jpg" alt="Placeholder 3" class="box-img">
-      </a>
+  <!-- Gallery Carousel -->
+  <div class="carousel">
+    <div class="slides">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+
+      <div class="slide s1">
+        <img src="images/pic.jpg" alt="Slide 1">
+      </div>
+      <div class="slide s2">
+        <img src="images/pic.jpg" alt="Slide 2">
+      </div>
+      <div class="slide s3">
+        <img src="images/pic.jpg" alt="Slide 3">
+      </div>
+
+      <!-- Dots -->
+      <div class="dots">
+        <label for="slide1" class="dot"></label>
+        <label for="slide2" class="dot"></label>
+        <label for="slide3" class="dot"></label>
+      </div>
     </div>
   </div>
 </main>
