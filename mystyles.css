@@ -50,12 +50,11 @@ body {
 }
 
 .grid-item {
-  background-color: #f8f6e7; /* pastel background */
-  border: 1px solid #888;
+  position: relative;
   border-radius: 12px;
-  padding: 20px;
+  overflow: hidden;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .grid-item a {
@@ -63,22 +62,75 @@ body {
   color: inherit;
   display: block;
   height: 100%;
-}
-
-.grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+  padding: 20px;
 }
 
 .grid-item h3 {
   margin: 10px 0;
   font-size: 18px;
-  color: #222;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .grid-item p {
   font-size: 14px;
-  color: #555;
+  color: #f8f8f8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Background image layer */
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* Light green hover overlay */
+.grid-item::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(144, 238, 144, 0); /* transparent by default */
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.grid-item:hover::after {
+  background: rgba(144, 238, 144, 0.4); /* light green overlay */
+}
+
+/* Background images for each subject */
+.grid-item:nth-child(1)::before { background-image: url("images/english.jpg"); }
+.grid-item:nth-child(2)::before { background-image: url("images/math.jpg"); }
+.grid-item:nth-child(3)::before { background-image: url("images/filipino.jpg"); }
+.grid-item:nth-child(4)::before { background-image: url("images/science.jpg"); }
+.grid-item:nth-child(5)::before { background-image: url("images/economics.jpg"); }
+.grid-item:nth-child(6)::before { background-image: url("images/christian.jpg"); }
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
