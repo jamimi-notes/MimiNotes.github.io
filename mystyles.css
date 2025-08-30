@@ -1,137 +1,54 @@
-/* Global Styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
+/* Full width and no horizontal scroll */
+html, body {
   width: 100%;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden;
+  font-family: 'Times New Roman', serif;
 }
 
+/* Main content fills screen fully */
 .main-content {
-  margin-left: 0; /* if you use a sidebar toggle, adjust dynamically */
-  padding: 0; 
-  flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  padding: 20px;
-  transition: margin-left 0.3s;
+  width: 100%;
+  margin: 0;
+  padding: 0; /* remove side padding */
 }
 
-/* Sidebar Styles */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #AFE1AF;
-  padding-top: 60px;
-  transition: left 0.3s;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar-menu a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  padding: 15px 20px;
-  transition: background 0.3s;
-}
-
-.sidebar-menu a:hover {
-  background-color: #5F8575;
-  color: white;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-/* Sidebar Toggle */
-#sidebar-toggle:checked ~ .sidebar {
-  left: 0;
-}
-
-#sidebar-toggle:checked ~ .open-btn {
-  display: none;
-}
-
-#sidebar-toggle:checked ~ .main-content {
-  margin-left: 270px;
-}
-
-/* Open Button */
-.open-btn {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  font-size: 20px;
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 3;
-}
-
-
-/* Header */
-.header-container {
-  background-color: #AFE1AF;
-  padding: 30px;
+/* Header and description full width */
+.header-container, .description-container {
+  width: 100%;
+  padding: 20px 0; /* only vertical padding */
   text-align: center;
 }
 
-.header-container h1 {
-  font-size: 3rem;
-}
-
-/* Description */
-.description-container {
-  background-color: #D4F1D4;
-  padding: 15px;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-/* Boxes Grid */
+/* Boxes grid full width */
 .boxes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  padding: 30px 0;
+  gap: 20px;
+  width: 100%;
+  padding: 0; /* remove side padding */
+  margin: 0;
 }
 
+/* Each box */
 .box {
-  background-color: #E0F2E0;
-  border: 2px solid #333;
+  margin: 0; /* remove any margin that adds space */
   border-radius: 15px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s, background-color 0.3s;
   color: #000;
   text-decoration: none;
+  background-color: #E0F2E0;
+  border: 2px solid #333;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .box:hover {
@@ -139,41 +56,24 @@ body, html {
   background-color: #C8E6C8;
 }
 
-.box-text {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.box-desc {
-  font-size: 1rem;
-}
-
-/* Bottom Containers */
+/* Bottom containers */
 .bottom-container {
-  padding: 20px;
+  width: 100%;
+  padding: 20px 0; /* vertical only */
   text-align: center;
-  font-size: 1.2rem;
-  color: #000;
 }
 
-.bottom-container.light-green {
-  background-color: #D4F1D4;
-}
-
-.bottom-container.sage-green {
-  background-color: #AFE1AF;
-}
+.bottom-container.light-green { background-color: #D4F1D4; }
+.bottom-container.sage-green { background-color: #AFE1AF; }
 
 /* Footer */
 footer {
+  width: 100%;
   background-color: #5F8575;
   color: beige;
   text-align: center;
   padding: 10px 0;
-  margin-top: auto;
 }
-
 
 
 
