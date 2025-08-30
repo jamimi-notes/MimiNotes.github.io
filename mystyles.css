@@ -3,8 +3,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: 'Times new roman', sans-serif;
+}
+
 * {
   margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
   
@@ -136,11 +137,13 @@ body {
 
 /* Footer styling */
 footer {
+  margin-top: auto;
   background-color: #5F8575;
   color: beige;
   text-align: center;
   padding: 10px 0;
 }
+
 
 
 
