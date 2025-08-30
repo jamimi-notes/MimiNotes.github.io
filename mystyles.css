@@ -97,8 +97,8 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   background-color: #5F8575;
   color: white;
   font-size: 1.5rem;
@@ -137,49 +137,3 @@ footer {
   position: relative;
   z-index: 1;
 }
-
-/* Bottom Boxes */
-.bottom-container {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: auto;
-  margin-bottom: 50px;
-}
-
-/* Box Styles */
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 150px;
-  background-color: #a2d5ab;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-}
-
-/* Hover Effect */
-.box:hover {
-  transform: scale(1.08);
-  background-color: #b8e6c6;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
-
-/* Footer */
-footer {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-
