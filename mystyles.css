@@ -27,40 +27,39 @@ body::before {
   z-index: -1;
 }
 
-/* Sidebar */
+/* Sidebar Background */
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: 	#40826D;
-  padding-top: 60px;
-  transition: left 0.3s;
-  z-index: 2;
+  background-color: #40826D; /* changed from #AFE1AF */
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s;
+  z-index: 2;
 }
 
+/* Sidebar Links as Rows with Separator Lines */
 .sidebar a {
   text-decoration: none;
-  color: #40826D;
+  color: #fff; /* white text to contrast */
   font-weight: 600;
   padding: 15px 20px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* row separator line */
+}
+
+.sidebar a:last-child {
+  border-bottom: none; /* no line after the last item */
 }
 
 .sidebar a:hover {
   background-color: #5F8575;
   color: white;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 30px;
-  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* Sidebar Toggle */
@@ -252,6 +251,7 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
 
