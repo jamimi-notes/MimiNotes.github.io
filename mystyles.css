@@ -203,7 +203,10 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
-
+/* Hide the default top-left header completely */
+header {
+  display: none;
+}
 
 
 
