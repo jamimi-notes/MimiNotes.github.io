@@ -1,5 +1,4 @@
-  transform: translateY(-50%)``
-````````````````````````````````````````````````````````````````````/* Global Reset */
+ /* ================== Global Reset ================== */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Background Image */
+/* ================== Background Image ================== */
 body::before {
   content: "";
   position: fixed;
@@ -28,15 +27,14 @@ body::before {
   z-index: -1;
 }
 
-/* Sidebar Background */
-/* Sidebar */
+/* ================== Sidebar ================== */
 .sidebar {
   position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #9FE2BF; /* changed from previous color */
+  background-color: #9FE2BF;
   padding-top: 60px;
   transition: left 0.3s;
   z-index: 2;
@@ -44,33 +42,17 @@ body::before {
   flex-direction: column;
 }
 
-/* Sidebar Background */
-.sidebar {
-  background-color: 	#9FE2BF; /* Updated to your preferred color */
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-  position: fixed;
-  top: 0;
-  left: -250px; /* Adjusted for better visibility */
-  width: 250px;
-  height: 100%;
-  transition: left 0.3s;
-  z-index: 2;
-}
-
-/* Sidebar Links as Rows with Separator Lines */
 .sidebar a {
   text-decoration: none;
-  color: #fff; /* White text for contrast */
+  color: #fff;
   font-weight: 600;
   padding: 15px 20px;
   transition: background 0.3s, transform 0.3s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Row separator line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .sidebar a:last-child {
-  border-bottom: none; /* No line after the last item */
+  border-bottom: none;
 }
 
 .sidebar a:hover {
@@ -79,19 +61,20 @@ body::before {
   transform: scale(1.05);
 }
 
-
 /* Sidebar Toggle */
 #sidebar-toggle:checked ~ .sidebar {
   left: 0;
 }
+
 #sidebar-toggle:checked ~ .open-btn {
   display: none;
 }
+
 #sidebar-toggle:checked ~ .page-wrapper {
   margin-left: 270px;
 }
 
-/* Open Button */
+/* ================== Open Button ================== */
 .open-btn {
   position: fixed;
   top: 20px;
@@ -105,14 +88,13 @@ body::before {
   z-index: 3;
 }
 
-/* Page Wrapper */
+/* ================== Page Wrapper & Main Content ================== */
 .page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Main Content */
 .main-content {
   flex: 1;
   display: flex;
@@ -120,7 +102,7 @@ body::before {
   width: 100%;
 }
 
-/* Header */
+/* ================== Header ================== */
 .header-container {
   background-color: #AFE1AF;
   text-align: center;
@@ -131,7 +113,7 @@ body::before {
   font-size: 3rem;
 }
 
-/* Description */
+/* ================== Description ================== */
 .description-container {
   background-color: #D4F1D4;
   text-align: center;
@@ -141,7 +123,7 @@ body::before {
   margin-bottom: 20px;
 }
 
-/* Boxes Grid: 3x2 */
+/* ================== Boxes Grid ================== */
 .boxes-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -177,7 +159,7 @@ body::before {
   font-size: 1rem;
 }
 
-/* Bottom Containers */
+/* ================== Bottom Containers ================== */
 .bottom-container {
   width: 100%;
   padding: 20px 0;
@@ -185,12 +167,11 @@ body::before {
   font-size: 1.2rem;
 }
 
-.bottom-container.light-green { background-color: #D4F1D4; }
-
-body {
-  margin: 0;
+.bottom-container.light-green { 
+  background-color: #D4F1D4; 
 }
 
+/* ================== Gallery ================== */
 .gallery-wrapper {
   position: fixed;
   bottom: 0;
@@ -199,9 +180,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f4f4f4;
-  padding: 10px;
+  padding: 10px 50px; /* padding for arrows */
   gap: 10px;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .image-gallery {
@@ -226,69 +208,28 @@ body {
   transform: scale(1.1);
 }
 
+/* ================== Arrows ================== */
 .arrow {
-  cursor: pointer;
-  font-size: 24px;
-  user-select: none;
-  padding: 5px 10px;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 5px;
-}
-
-.arrow:hover {
-  background-color: #66bb6a;
-}
-
-/* Scroll on hover (CSS only trick) */
-.gallery-wrapper:hover .image-gallery {
-  scroll-behavior: smooth;
-}
-
-/* CSS Radio Button Control */
-#img1:checked ~ .gallery-images { transform: translateX(0); }
-#img2:checked ~ .gallery-images { transform: translateX(-33.3333%); }
-#img3:checked ~ .gallery-images { transform: translateX(-66.6666%); }
-
-/* Arrows */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 2rem;
-  color: #5F8575;
   cursor: pointer;
-  padding: 10px;
+  user-select: none;
+  color: black;               /* arrow color */
   background-color: rgba(255,255,255,0.7);
   border-radius: 50%;
+  padding: 10px;
+  position: fixed;            /* fixed at bottom */
+  bottom: 20px;
+  z-index: 1001;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 20px; }
+.next { right: 20px; }
 
-/* Dots */
-.gallery-dots {
-  text-align: center;
-  margin-top: 15px;
+.arrow:hover {
+  background-color: rgba(200,200,200,0.9);
 }
 
-.gallery-dots .dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #D4F1D4;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-#img1:checked ~ .gallery-dots label[for="img1"],
-#img2:checked ~ .gallery-dots label[for="img2"],
-#img3:checked ~ .gallery-dots label[for="img3"] {
-  background-color: #5F8575;
-}
-
-/* Footer */
+/* ================== Footer ================== */
 footer {
   width: 100%;
   background-color: #5F8575;
@@ -297,10 +238,6 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
-
-
-
-
 
 
 
