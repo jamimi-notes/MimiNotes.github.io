@@ -186,31 +186,63 @@ body::before {
 }
 
 .bottom-container.light-green { background-color: #D4F1D4; }
-.bottom-container.sage-green { background-color: #AFE1AF; }
-.image-gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 20px;
-  background-color: #f4f4f4;
+
+body {
+  margin: 0;
+}
+
+.gallery-wrapper {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.image-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  scroll-behavior: smooth;
 }
 
 .image-gallery img {
+  flex: 0 0 auto;
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  scroll-snap-align: start;
+  transition: transform 0.3s;
 }
 
 .image-gallery img:hover {
   transform: scale(1.1);
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.arrow:hover {
+  background-color: #66bb6a;
+}
+
+/* Scroll on hover (CSS only trick) */
+.gallery-wrapper:hover .image-gallery {
+  scroll-behavior: smooth;
 }
 
 /* CSS Radio Button Control */
@@ -265,6 +297,7 @@ footer {
   padding: 10px 0;
   margin-top: auto;
 }
+
 
 
 
